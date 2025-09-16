@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Registrar Estudiante</title>
+    <title>CALIFICACIONES - GRUPO 2</title>
 </head>
 <body>
-    <h1>Registrar Nuevo Estudiante</h1>
+    <h1>Registrar Calificaciones </h1>
     <form action="index.php" method="POST">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br>
@@ -19,4 +19,4 @@
     <a href="index.php?action=listar">Ver lista de estudiantes</a>
 </body>
 </html>
-hol
+
