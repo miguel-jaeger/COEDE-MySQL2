@@ -6,6 +6,7 @@
 <body>
     <h1>Lista de Estudiantes</h1>
     <table border="1">
+    <link rel="stylesheet" href="/php/COEDE-MySQL2/VISTA/style1.css"/>
         <thead>
             <tr>
                 <th>ID</th>
