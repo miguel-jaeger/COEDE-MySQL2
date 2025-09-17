@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>CALIFICACIONES - GRUPO 2</title>
+    <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
     <h1>REGISTRO INDIVIDUAL DE NOTAS (RIN) </h1>
