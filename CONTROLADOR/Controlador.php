@@ -4,7 +4,7 @@ require_once './modelo/Estudiante.php';
 
 $database = new Database();
 $db = $database->getConnection();
-$estudiante = new cursos($db);
+$estudiante = new Estudiante($db);
 
 $action = isset($_GET['action']) ? $_GET['action'] : '';
 $post_action = isset($_POST['action']) ? $_POST['action'] : '';
