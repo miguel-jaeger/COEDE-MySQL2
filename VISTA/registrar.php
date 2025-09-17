@@ -15,8 +15,8 @@
         <label>Nota:</label>
         <input type="number" step="0.01" name="nota" required>
 
-        <label>Comentario:</label>
-        <input type="text" name="comentario" required>
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" required></textarea>
 
         <button type="submit">Guardar</button>
     </form>
