@@ -4,7 +4,7 @@
     <title>CALIFICACIONES - GRUPO 2</title>
 </head>
 <body>
-    <h1>Registrar Calificaciones </h1>
+    <h1>REGISTRO INDIVIDUAL DE NOTAS (RIN) </h1>
     <form action="index.php" method="POST">
         <label for="nombre">Nombre:</label><br>
         <input type="text" id="nombre" name="nombre" required><br>
