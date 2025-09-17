@@ -19,7 +19,7 @@
         <button type="submit">Guardar</button>
     </form>
     <hr>
-    <a href="index.php?action=listar">Ver lista de estudiantes</a>
+    <a href="index.php?action=listar">Ver lista de Notas</a>
 </body>
 </html>
 
