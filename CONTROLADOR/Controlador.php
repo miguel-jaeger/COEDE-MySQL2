@@ -1,33 +1,43 @@
 <?php
-require_once './modelo/Conexion.php';
-require_once './modelo/Estudiante.php';
+require_once "modelo/Modelo.php";
 
-$database = new Database();
-$db = $database->getConnection();
-$estudiante = new Estudiante($db);
+class Controlador {
 
-$action = isset($_GET['action']) ? $_GET['action'] : '';
-$post_action = isset($_POST['action']) ? $_POST['action'] : '';
+    public static function procesar($accion) {
+        switch ($accion) {
+            case "crear":
+                if (Modelo::registrar($_POST)) {
+                    header("Location: index.php?action=listar");
+                }
+                break;
 
-if($post_action == 'crear'){
-    $estudiante->nombre = $_POST['nombre'];
-    $estudiante->apellido = $_POST['apellido'];
-    $estudiante->correo = $_POST['correo'];
+            case "listar":
+                $datos = Modelo::listar();
+                include "vista/listar.php";
+                break;
 
-    if($estudiante->crear()){
-        header("Location: index.php?action=listar&status=success");
-        exit();
-    } else {
-        echo "Error al crear estudiante.";
+            case "eliminar":
+                if (isset($_GET["id"])) {
+                    Modelo::eliminar($_GET["id"]);
+                }
+                header("Location: index.php?action=listar");
+                break;
+
+            case "editar":
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    Modelo::editar($_POST);
+                    header("Location: index.php?action=listar");
+                } else {
+                    $dato = Modelo::obtener($_GET["id"]);
+                    include "vista/editar.php";
+                }
+                break;
+
+            case "registrar":
+            default:
+                include "vista/registrar.php";
+                break;
+        }
     }
-} else if ($action == 'listar') {
-    $estudiantes = $estudiante->leer();
-    require_once './vista/Listar.php';
-} else if( $action == 'eliminar') { 
-    $estudiante->eliminar($_GET['id']);  
-    require_once './vista/Listar.php';  
-}else{
-    // Si no se especifica ninguna acción, muestra el formulario
-    require_once './vista/Registro.php';
 }
 ?>
