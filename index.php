@@ -6,7 +6,7 @@ require_once './modelo/Estudiante.php';
 // Conexión a la base de datos
 $database = new Database();
 $db = $database->getConnection();
-$estudiante = new Estudiante($db);
+$estudiante = new cursos($db);
 
 // Determina la acción a realizar
 $action = isset($_GET['action']) ? $_GET['action'] : '';

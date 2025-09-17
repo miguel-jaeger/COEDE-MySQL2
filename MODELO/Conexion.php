@@ -3,7 +3,7 @@
 class Database {
     private $host = "localhost";
     //Datos a cambiar
-    private $db_name = "db_estudiantes";
+    private $db_name = "db_cursos";
     private $username = "root";
     private $password = "";
     public $conn;
