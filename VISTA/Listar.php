@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Estudiantes</title>
+    <title>Lista de Registro Individual de Notas (RIN)</title>
 </head>
 <body>
-    <h1>Lista de Estudiantes</h1>
+    <h1>Lista de Registro Individual de Notas (RIN)</h1>
     <table border="1">
     <link rel="stylesheet" href="/php/COEDE-MySQL2/VISTA/style1.css"/>
         <thead>
             <tr>
                 <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido</th>
+                <th>Curso</th>
+                <th>Nota</th>
                 <th>Correo</th>
                 <th>Acción</th>
             </tr>
