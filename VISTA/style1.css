@@ -1,83 +1,79 @@
-/* style1.css */
-
+/* Fondo con imagen */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
     margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url('img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
 }
 
-.registro-container {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-    max-width: 450px;
-    width: 90%;
+/* Contenedor de las imágenes arriba */
+.top-images {
+    position: relative;
+    height: 150px;
+    margin-bottom: 20px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 25px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
+/* Imagen izquierda */
+.img-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: auto;
 }
 
-.registro-form label {
+/* Imagen derecha */
+.img-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+    height: auto;
+}
+
+/* Contenedor formulario centrado */
+.form-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente negro */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+/* Estilos formulario */
+form label {
+    font-weight: bold;
     display: block;
     margin-top: 15px;
-    font-weight: 600;
-    font-size: 16px;
 }
 
-.registro-form input[type="text"],
-.registro-form input[type="email"],
-.registro-form textarea {
+form input[type="text"],
+form input[type="email"],
+form textarea {
     width: 100%;
-    padding: 10px 12px;
-    margin-top: 6px;
-    border-radius: 8px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
     border: none;
-    font-size: 15px;
+    font-size: 1em;
 }
 
-.registro-form textarea {
-    resize: vertical;
-    min-height: 80px;
-}
-
-.registro-form button {
-    margin-top: 25px;
+/* Botón */
+form button {
+    margin-top: 20px;
     width: 100%;
-    background-color: #ff6f61;
+    padding: 10px;
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
     color: white;
-    font-weight: 700;
-    font-size: 16px;
-    border: none;
-    padding: 12px;
-    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.registro-form button:hover {
-    background-color: #ff3b2f;
-}
-
-.link-lista {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #ffc107;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.link-lista:hover {
-    text-decoration: underline;
+form button:hover {
+    background-color: #005f5f;
 }
