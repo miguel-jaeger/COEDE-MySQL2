@@ -32,6 +32,31 @@
     </style>
 </head>
 <body>
+<<<<<<< HEAD
+    <h1>Lista de Registro Individual de Notas (RIN)</h1>
+    <table border="1">
+    <link rel="stylesheet" href="/php/COEDE-MySQL2/VISTA/style1.css"/>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Curso</th>
+                <th>Nota</th>
+                <th>Correo</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while ($row = $estudiantes->fetch(PDO::FETCH_ASSOC)): ?>
+            <tr>
+                <td><?php echo $row['id_estudiante']; ?></td>
+                <td><?php echo $row['nombre']; ?></td>
+                <td><?php echo $row['apellido']; ?></td>
+                <td><?php echo $row['correo']; ?></td>
+                <td><a href="index.php?action=eliminar&id=<?php echo $row['id_estudiante']; ?>">Eliminar</a></td>
+            </tr>
+            <?php endwhile; ?>
+        </tbody>
+=======
 <div class="container">
     <h1>Lista de Calificaciones</h1>
     <table>
@@ -54,6 +79,7 @@
             </td>
         </tr>
         <?php endforeach; ?>
+>>>>>>> 79c37edd312b6e0beae3c04f114a96be6baa2306
     </table>
     <p style="text-align:center; margin-top:15px;">
         <a href="index.php?action=registrar">Registrar nuevo</a>
