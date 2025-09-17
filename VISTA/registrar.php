@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrar Calificación</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style1.css"/>
 </head>
 <body>
 <div class="container">
-    <h1>Registrar Calificación</h1>
+    <h1>Registrar Calificación</h1> 
     <form action="index.php?action=crear" method="POST">
         <label>Materia:</label>
         <input type="text" name="materia" required>
