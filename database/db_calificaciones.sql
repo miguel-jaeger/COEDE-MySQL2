@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-09-2025 a las 17:25:03
+-- Tiempo de generación: 17-09-2025 a las 19:52:01
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -18,43 +18,52 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `db_cursos`
+-- Base de datos: `db_calificaciones`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `curso_nota`
+-- Estructura de tabla para la tabla `calificaciones`
 --
 
-CREATE TABLE `curso_nota` (
+CREATE TABLE `calificaciones` (
   `id` int(11) NOT NULL,
-  `curso` varchar(20) NOT NULL,
+  `materia` varchar(20) NOT NULL,
   `nota` float NOT NULL,
-  `correo` varchar(100) NOT NULL,
   `comentario` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `calificaciones`
+--
+
+INSERT INTO `calificaciones` (`id`, `materia`, `nota`, `comentario`) VALUES
+(1, 'hols', 12, 'sdf'),
+(2, 'php', 13, 'hola'),
+(3, 'php', 15, 'estuvo bueno'),
+(4, 'c++', 20, 'estuvo excelente'),
+(5, 'oho', 12, 'asdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdas');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `curso_nota`
+-- Indices de la tabla `calificaciones`
 --
-ALTER TABLE `curso_nota`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `correo` (`correo`);
+ALTER TABLE `calificaciones`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `curso_nota`
+-- AUTO_INCREMENT de la tabla `calificaciones`
 --
-ALTER TABLE `curso_nota`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `calificaciones`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
