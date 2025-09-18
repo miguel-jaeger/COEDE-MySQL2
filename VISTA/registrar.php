@@ -30,7 +30,7 @@
         </select>
 
         <br><label>Nota:</label><br>
-        <input type="number" step="0.01" name="nota" required>
+        <input type="number" step="0.01" min="0" max="20" name="nota" required>
 
         <br><label>Comentario:</label><br>
         <textarea name="comentario" required></textarea>

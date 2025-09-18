@@ -23,26 +23,26 @@ class Controlador {
                 header("Location: index.php?action=listar");
                 break;
 
-            case "editar":
+            case "editar": // 🔹 Solo muestra el formulario
+                if (isset($_GET["id"])) {
+                    $estudiante = Modelo::obtenerPorId((int)$_GET["id"]);
+                    if ($estudiante) {
+                        include "vista/editar.php";
+                    } else {
+                        echo "⚠️ Registro no encontrado.";
+                    }
+                } else {
+                    header("Location: index.php?action=listar");
+                }
+                break;
+
+            case "actualizar": // 🔹 Guarda los cambios
                 if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     Modelo::actualizar($_POST);
                     header("Location: index.php?action=listar");
                     exit;
-                } else {
-                    if (isset($_GET["id"])) {
-                        $estudiante = Modelo::obtenerPorId((int)$_GET["id"]);
-                        if ($estudiante) {
-                            include "vista/editar.php";
-                        } else {
-                            echo "⚠️ Registro no encontrado.";
-                        }
-                    } else {
-                        header("Location: index.php?action=listar");
-                        exit;
-                    }
                 }
                 break;
-
 
             case "registrar":
             default:
