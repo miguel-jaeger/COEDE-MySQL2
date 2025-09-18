@@ -8,7 +8,7 @@
 <body>
     <div class="top-logos">
     <img src="FONDOS/ejercito.png" alt="Logo izquierdo" class="logo-left">
-    <img src="FONDOS/com.jpg" alt="Logo derecho" class="logo-right">
+    <img src="FONDOS/com.png" alt="Logo derecho" class="logo-right">
     </div>
 <div class="container">
     <h1>REGISTRO INDIVIDUAL DE NOTAS</h1>
