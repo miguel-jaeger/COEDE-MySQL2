@@ -28,7 +28,8 @@ class Controlador {
                     Modelo::editar($_POST);
                     header("Location: index.php?action=listar");
                 } else {
-                    $dato = Modelo::obtener($_GET["id"]);
+                    $dato = Modelo::obtenerPorId($_GET["id"]); 
+
                     include "vista/editar.php";
                 }
                 break;

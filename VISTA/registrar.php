@@ -19,7 +19,7 @@
         <input type="text" name="materia" required>
 
         <label>Nota:</label>
-        <input type="number" step="0.01" name="nota" required>
+        <input type="number" min="0" max="20" step="0.01" name="nota" required>
 
         <label for="comentario">Comentario:</label>
         <textarea id="comentario" name="comentario" required></textarea>
