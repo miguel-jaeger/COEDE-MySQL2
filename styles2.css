@@ -8,12 +8,22 @@ body {
     background: url("FONDOS/escuela.jpg") no-repeat center center fixed;
     background-size: cover;      
     color: #eceaea;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.7);
-    font-size: 18px; 
+}
+.container {
+    max-width: 900px;         /* ancho máximo del cuadro */
+    margin: 40px auto;        /* centrado con espacio arriba/abajo */
+    background-color: #ffffff;/* fondo blanco sólido, no transparente */
+    padding: 30px;            /* espacio interno */
+    border-radius: 10px;      /* esquinas redondeadas opcionales */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* ligera sombra para resaltar */
+}
+
+/* Opcional: texto de la tabla en negro para contrastar */
+.container,
+.container table,
+.container th,
+.container td {
+    color: #000;
 }
 
 /* Contenedor para los logos superiores */

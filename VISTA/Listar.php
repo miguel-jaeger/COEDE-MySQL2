@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de Calificaciones</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+    <div class="top-logos">
+    <img src="FONDOS/ejercito.png" alt="Logo izquierdo" class="logo-left">
+    <img src="FONDOS/com.jpg" alt="Logo derecho" class="logo-right">
+    </div>
 <div class="container">
     <h1>REGISTRO INDIVIDUAL DE NOTAS</h1>
 

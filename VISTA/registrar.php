@@ -6,16 +6,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="top-logos">
+    <img src="FONDOS/ejercito.png" alt="Logo izquierdo" class="logo-left">
+    <img src="FONDOS/com.jpg" alt="Logo derecho" class="logo-right">
+    </div>
 <div class="container">
     <h1>Registro de Notas</h1>
     <form action="index.php?action=crear" method="POST">
-        <label>Apellidos:</label>
+        <label>Apellidos:</label><br>
         <input type="text" name="apellidos" required>
 
-        <label>Nombres:</label>
+        <br><label>Nombres:</label><br>
         <input type="text" name="nombres" required>
 
-        <label for="materia">Materia:</label>
+        <br><label for="materia">Materia:</label><br>
         <select id="materia" name="materia" required>
             <option value="" disabled selected>--- Elija un curso ---</option>
             <option value="PHP">PHP</option>
@@ -25,10 +29,10 @@
             <option value="SQL">SQL</option>
         </select>
 
-        <label>Nota:</label>
+        <br><label>Nota:</label><br>
         <input type="number" step="0.01" name="nota" required>
 
-        <label>Comentario:</label>
+        <br><label>Comentario:</label><br>
         <textarea name="comentario" required></textarea>
 
         <button type="submit">Guardar</button>
