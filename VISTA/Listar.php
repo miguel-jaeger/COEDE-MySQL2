@@ -28,8 +28,10 @@
             <td><?= $fila['nota'] ?></td>
             <td><?= $fila['comentario'] ?></td>
             <td>
-                <a href="index.php?action=editar&id=<?= $fila['id'] ?>">Editar</a> |
-                <a href="index.php?action=eliminar&id=<?= $fila['id'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a>
+                <p style="text-align:center; margin-top:10px;"> 
+                    <a href="index.php?action=editar&id=<?= $fila['id'] ?>">Editar</a> |
+                    <a href="index.php?action=eliminar&id=<?= $fila['id'] ?>" onclick="return confirm('¿Eliminar registro?')">Eliminar</a>
+                </p>
             </td>
         </tr>
         <?php endforeach; ?>
