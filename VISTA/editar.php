@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Editar Registro de Notas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
 <div class="container">
