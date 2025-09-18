@@ -7,7 +7,7 @@ body {
     font-family: Arial, sans-serif;
     background: url("FONDOS/escuela.jpg") no-repeat center center fixed;
     background-size: cover;      
-    color: #eceaea;
+    color: #000000;
     max-width: 400px;
     margin: 0 auto;
     padding: 30px;
@@ -50,5 +50,17 @@ body {
     border-radius: 10px;
 }
 
+.container {
+    max-width: 900px;         /* ancho máximo del cuadro */
+    margin: 40px auto;        /* centrado con espacio arriba/abajo */
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.65), /* blanco 65% opaco (35% transparente) */
+        rgba(255, 255, 255, 0.85)  /* blanco más sólido */
+    );
+    padding: 30px;            /* espacio interno */
+    border-radius: 10px;      /* esquinas redondeadas opcionales */
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); /* ligera sombra para resaltar */
+}
 
 
