@@ -42,6 +42,7 @@ class Modelo {
         return $row ?: null;
     }
 
+
     public static function actualizar(array $datos): bool {
         $conn = self::conexion();
         if (!$conn) return false;

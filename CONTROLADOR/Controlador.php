@@ -24,14 +24,25 @@ class Controlador {
                 break;
 
             case "editar":
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    Modelo::editar($_POST);
+                if ($_SERVER["REQUEST_METHOD"] === "POST") {
+                    Modelo::actualizar($_POST);
                     header("Location: index.php?action=listar");
+                    exit;
                 } else {
-                    $dato = Modelo::obtenerPorId($_GET["id"]); 
-                    include "vista/editar.php";
+                    if (isset($_GET["id"])) {
+                        $estudiante = Modelo::obtenerPorId((int)$_GET["id"]);
+                        if ($estudiante) {
+                            include "vista/editar.php";
+                        } else {
+                            echo "⚠️ Registro no encontrado.";
+                        }
+                    } else {
+                        header("Location: index.php?action=listar");
+                        exit;
+                    }
                 }
                 break;
+
 
             case "registrar":
             default:
