@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrar Calificación</title>
-    <link rel="stylesheet" href="style1.css"/>
+    <link rel="stylesheet" href="../style1.css"/>
 </head>
 <body>
 <div class="container">
