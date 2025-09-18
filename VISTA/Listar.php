@@ -37,6 +37,8 @@
     <table>
         <tr>
             <th>ID</th>
+            <th>Apellidos</th>
+            <th>Nombres</th>
             <th>Materia</th>
             <th>Nota</th>
             <th>Comentario</th>
@@ -45,6 +47,8 @@
         <?php foreach ($datos as $fila): ?>
         <tr>
             <td><?= $fila["id"] ?></td>
+            <td><?= $fila["apellidos"] ?></td>
+            <td><?= $fila["nombres"] ?></td>
             <td><?= $fila["materia"] ?></td>
             <td><?= $fila["nota"] ?></td>
             <td><?= $fila["comentario"] ?></td>

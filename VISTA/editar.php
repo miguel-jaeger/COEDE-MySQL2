@@ -11,6 +11,15 @@
     <form action="index.php?action=editar" method="POST">
         <input type="hidden" name="id" value="<?= $dato['id'] ?>">
 
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" value="<?= $dato['apellidos'] ?>" required>
+
+        <label>Nombres:</label>
+        <input type="text" name="nombres" value="<?= $dato['nombres'] ?>" required>
+
+        <label>Materia:</label>
+        <input type="text" name="materia" value="<?= $dato['materia'] ?>" required>
+        
         <label>Materia:</label>
         <input type="text" name="materia" value="<?= $dato['materia'] ?>" required>
 

@@ -9,6 +9,12 @@
 <div class="container">
     <h1>Registrar Calificación</h1> 
     <form action="index.php?action=crear" method="POST">
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" required>
+
+        <label>Nombres:</label>
+        <input type="text" name="nombres" required>
+
         <label>Materia:</label>
         <input type="text" name="materia" required>
 
