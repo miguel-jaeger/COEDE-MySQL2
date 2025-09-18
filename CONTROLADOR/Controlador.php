@@ -29,7 +29,6 @@ class Controlador {
                     header("Location: index.php?action=listar");
                 } else {
                     $dato = Modelo::obtenerPorId($_GET["id"]); 
-
                     include "vista/editar.php";
                 }
                 break;

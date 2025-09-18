@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-09-2025 a las 19:52:01
+-- Tiempo de generación: 18-09-2025 a las 07:45:43
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -29,6 +29,8 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `calificaciones` (
   `id` int(11) NOT NULL,
+  `apellidos` varchar(60) DEFAULT NULL,
+  `nombres` varchar(60) DEFAULT NULL,
   `materia` varchar(20) NOT NULL,
   `nota` float NOT NULL,
   `comentario` varchar(500) NOT NULL
@@ -38,12 +40,17 @@ CREATE TABLE `calificaciones` (
 -- Volcado de datos para la tabla `calificaciones`
 --
 
-INSERT INTO `calificaciones` (`id`, `materia`, `nota`, `comentario`) VALUES
-(1, 'hols', 12, 'sdf'),
-(2, 'php', 13, 'hola'),
-(3, 'php', 15, 'estuvo bueno'),
-(4, 'c++', 20, 'estuvo excelente'),
-(5, 'oho', 12, 'asdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdasasdas');
+INSERT INTO `calificaciones` (`id`, `apellidos`, `nombres`, `materia`, `nota`, `comentario`) VALUES
+(1, NULL, NULL, 'hols', 12, 'sdf'),
+(2, NULL, NULL, 'php', 13, 'hola'),
+(3, NULL, NULL, 'php', 15, 'estuvo bueno'),
+(4, NULL, NULL, 'c++', 20, 'estuvo excelente'),
+(6, NULL, NULL, 'da', 12, 'gt'),
+(7, NULL, NULL, 'da', 12, 'sdf'),
+(8, 'colquehuanca saldivar', 'moises fernando', 'php', 23, 'asd'),
+(9, 'flores', 'moises fernando', 'php', 20, 'asd'),
+(10, 'flores', 'moises fernando', 'php', 2, 'asd'),
+(11, 'flores', 'moises fernando', 'php', 20, 'asd');
 
 --
 -- Índices para tablas volcadas
@@ -63,7 +70,7 @@ ALTER TABLE `calificaciones`
 -- AUTO_INCREMENT de la tabla `calificaciones`
 --
 ALTER TABLE `calificaciones`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
