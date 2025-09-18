@@ -25,6 +25,9 @@
         <br><label>Materia:</label><br>
         <select id="materia" name="materia" required>
             <option value="" disabled selected>--- Elija un curso ---</option>
+            <option value="fundamentos_de_ciber">FUNDAMENTOS DE CIBERDEFENSA</option>
+            <option value="windows">SISTEMA OP WINDOWS</option>
+            <option value="shell">LENGUAJE BASICO DE SHELL</option>
             <option value="PHP">PHP</option>
             <option value="C++">C++</option>
             <option value="Linux">Linux</option>
