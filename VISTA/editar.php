@@ -14,13 +14,13 @@
     <h1>Editar Registro de Notas</h1>
     <?php if (!empty($estudiante)): ?>
     <form action="index.php?action=actualizar" method="POST">
-        <input type="hidden" name="id" value="<?= htmlspecialchars($estudiante['id']) ?>">
+        <input type="hidden" name="id" value="<?= $estudiante['id'] ?>">
 
         <label>Apellidos:</label><br>
-        <input type="text" name="apellidos" value="<?= htmlspecialchars($estudiante['apellidos']) ?>" required>
+        <input type="text" name="apellidos" value="<?=$estudiante['apellidos'] ?>" required>
 
         <br><label>Nombres:</label><br>
-        <input type="text" name="nombres" value="<?= htmlspecialchars($estudiante['nombres']) ?>" required>
+        <input type="text" name="nombres" value="<?= $estudiante['nombres'] ?>" required>
 
         <br><label>Materia:</label><br>
         <select id="materia" name="materia" required>

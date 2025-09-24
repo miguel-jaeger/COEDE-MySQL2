@@ -3,7 +3,7 @@ class Conexion {
     private $host = "localhost";
     private $db_name = "db_calificaciones"; // 👈 debe coincidir con lo que creaste
     private $username = "root";  // XAMPP usa root por defecto
-    private $password = "";      // vacío por defecto en XAMPP
+    private $password = "root";      // vacío por defecto en XAMPP
     public $conn;
 
     public function getConexion() {

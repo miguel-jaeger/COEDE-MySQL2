@@ -1,5 +1,5 @@
 <?php
-require_once "modelo/Modelo.php";
+require_once "./Modelo/Modelo.php";
 
 class Controlador {
 
